@@ -77,8 +77,5 @@ Function Start-Pomodoro {
 	Register-ObjectEvent -InputObject $pomodoro -EventName Elapsed -Action { Complete-Pomodoro }
 }
 
-#Import-RequiredModules
-#Start-Pomodoro
-
 Export-ModuleMember -Function Start-Pomodoro
 Export-ModuleMember -Function Complete-Pomodoro
